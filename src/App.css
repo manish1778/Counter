@@ -1,0 +1,72 @@
+/* App container */
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #cdaaeb;
+  font-family: Arial, sans-serif;
+}
+
+/* Title styling */
+h1 {
+  color: #000000;
+  margin: 10px;
+  font-size: 4rem;
+}
+
+/* Counter display styling */
+.App h1:nth-of-type(2) {
+  font-size: 10rem;
+  color: #0037ff;
+  font-weight: bold;
+  margin: 20px;
+}
+
+/* Button container - flex row for horizontal layout */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Default button styling */
+button {
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+  opacity: 0.9;
+}
+
+/* Button active effect */
+button:active {
+  opacity: 0.8;
+}
+
+/* Specific colors for each button */
+.decrement {
+  background-color: #dc3545; /* Red for Decrement */
+}
+
+.increment {
+  background-color: #28a745; /* Green for Increment */
+}
+
+.reset {
+  background-color: #ffc107; /* Yellow for Reset */
+}
+
+button:focus {
+  outline: none;
+}
